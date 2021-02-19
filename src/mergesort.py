@@ -7,7 +7,7 @@ def mergesort(a):
     if a[0] > a[1]:
       return [a[1], a[0]]
     else:
-      return a 
+      return a
 
   piv = len(a)//2
   m1 = mergesort(a[:piv])
@@ -20,7 +20,7 @@ def mergesort(a):
         acc.append(m2[0])
         m2 = m2[1:]
       else:
-	    acc.append(m1[0])
+        acc.append(m1[0])
         m1 = m1[1:]
     elif len(m1) > 0:
       acc.append(m1[0])
@@ -33,5 +33,5 @@ def mergesort(a):
   return acc
 					
 if __name__ == '__main__':        
-  arr = []
+  arr = [1160, 563, 916, 736, 658, 81, 1104, 302, 787, 58, 1220, 1149]
   print(mergesort(arr))
