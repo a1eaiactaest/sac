@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import fileinput
+
 def mergesort(a):
   if len(a) == 1:
     return a
@@ -31,7 +33,10 @@ def mergesort(a):
     else:
       break
   return acc
-					
-if __name__ == '__main__':        
-  arr = [1160, 563, 916, 736, 658, 81, 1104, 302, 787, 58, 1220, 1149]
+
+def main():
+  arr = [int(line) for line in fileinput.input(files='input.txt')]
   print(mergesort(arr))
+
+if __name__ == '__main__':        
+  main()

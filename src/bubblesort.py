@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import fileinput
 
 def bubblesort(a):
   for i in range(len(a)-1):
@@ -11,6 +12,10 @@ def bubblesort(a):
       break
   return a
 
-arr = [1160, 563, 916, 736, 658, 81, 1104, 302, 787, 58, 1220, 1149]
-bubblesort(arr)
-print(arr)
+def main():
+  arr = [int(line) for line in fileinput.input(files='input.txt')]
+  bubblesort(arr)
+  print(arr)
+
+if __name__ == '__main__':
+  main()
