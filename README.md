@@ -9,7 +9,7 @@ In [1]: import numpy
 				import sys
 
 In [2]: arr = numpy.random.randint(50000, size=(10000))
-	      arr.reshape(250,40) 
+				arr.reshape(250,40) 
 
 Out[2]: array([[23121, 28498, 43363, ..., 29491, 31081, 12973],
                [ 9166, 46585, 26501, ..., 38933, 43201, 45308],
