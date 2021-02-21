@@ -20,5 +20,6 @@ Out[2]: array([[23121, 28498, 43363, ..., 29491, 31081, 12973],
                [14762,  5234, 28853, ..., 30081,  6346, 24506]])
 ```
 
-View whole array [here](src/input.txt)
-And sorted array [here](src/sorted.txt)
+View whole array [here](src/input.txt).<br/> 
+
+And sorted array [here](src/sorted.txt).
