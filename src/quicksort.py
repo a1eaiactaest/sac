@@ -19,7 +19,10 @@ def quicksort(a, l, h):
     quicksort(a, l, piv_loc-1)
     quicksort(a, piv_loc+1, h)
 
-arr = [1160, 563, 916, 736, 658, 81, 1104, 302, 787, 58, 1220, 1149]
-quicksort(arr, 0, len(arr)-1)
-print(arr)
+def main():
+  arr = [1160, 563, 916, 736, 658, 81, 1104, 302, 787, 58, 1220, 1149]
+  quicksort(arr, 0, len(arr)-1)
+  print(arr)
 
+if __name__ == "__main__":
+  main()

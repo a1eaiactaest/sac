@@ -6,7 +6,6 @@ Array that all of the algorithms struggle was genereted completly randomly by th
 
 ```python3
 In [1]: import numpy
-				import sys
 
 In [2]: arr = numpy.random.randint(50000, size=(10000))
 				arr.reshape(250,40) 
@@ -23,3 +22,11 @@ Out[2]: array([[23121, 28498, 43363, ..., 29491, 31081, 12973],
 View whole array [here](src/input.txt).<br/> 
 
 And sorted array [here](src/sorted.txt).
+
+### TODO
+
+* <s>Write basic sorting algorithms</s>
+
+* write tests 
+
+* 
