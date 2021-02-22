@@ -22,17 +22,10 @@ def quicksort(a, l, h):
   return a
 
 def main():
-<<<<<<< HEAD
-  arr = [1160, 563, 916, 736, 658, 81, 1104, 302, 787, 58, 1220, 1149]
-  quicksort(arr, 0, len(arr)-1)
-  print(arr)
-=======
-  arr = [int(line) for line in fileinput.input(files='input.txt')]
+  #arr = [int(line) for line in fileinput.input(files='input.txt')]
+  arr = [5,9,1,3,4,6,6,3,2]
   print(quicksort(arr, 0, len(arr)-1))
-
-if __name__ == '__main__':
-  main()
->>>>>>> c6d8007346c83ca773256c20f4e8fe4d7610ad39
+  print(arr)
 
 if __name__ == "__main__":
   main()

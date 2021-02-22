@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import fileinput
+
 def selectionsort(a):
   for i in range(len(a)):
     min_i = i
@@ -7,7 +9,11 @@ def selectionsort(a):
       if a[min_i] > a[j]:
         min_i = j
     (a[i], a[min_i]) = (a[min_i], a[i])
+  return a
 
-arr = [1160, 563, 916, 736, 658, 81, 1104, 302, 787, 58, 1220, 1149]
-selectionsort(arr)
-print(arr)
+def main():
+  arr = [int(x) for x in fileinput.input(files='input.txt')]
+  print(selectionsort(arr))
+ 
+if __name__ == '__main__':
+  main()

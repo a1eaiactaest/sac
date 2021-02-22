@@ -27,7 +27,6 @@ def insertionsort(a):
 
 def main():
   arr = [int(line) for line in fileinput.input(files='input.txt')]
-  #arr = [5,9,1,3,4,6,6,2,3]
   print(insertionsort(arr))
 
 if __name__ == '__main__':
