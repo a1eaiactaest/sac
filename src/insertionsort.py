@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-
-def insertionsort(a,n):
-  if n>0:
+import fileinput
+"""
+def insertionsort(a,n):   # recursive
+  if n > 0:
     insertionsort(a, n-1)
     t = a[n]
     i = n-1
@@ -10,6 +11,24 @@ def insertionsort(a,n):
       i -= 1
     a[i+1] = t
 
-arr = [1160, 563, 916, 736, 658, 81, 1104, 302, 787, 58, 1220, 1149]
-insertionsort(arr, len(arr)-1)
-print(arr)
+"""
+
+# had to change to iterative because recursive did not work
+
+def insertionsort(a):
+  for i in range(1, len(a)):
+    k = a[i]
+    j = i-1
+    while j >= 0 and k < a[j]:
+      a[j+1] = a[j]
+      j -= 1
+    a[j+1] = k
+  return a
+
+def main():
+  arr = [int(line) for line in fileinput.input(files='input.txt')]
+  #arr = [5,9,1,3,4,6,6,2,3]
+  print(insertionsort(arr))
+
+if __name__ == '__main__':
+  main()
