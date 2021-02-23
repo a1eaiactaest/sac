@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import fileinput
-"""
+
 def insertionsort(a,n):   # recursive
   if n > 0:
     insertionsort(a, n-1)
@@ -11,9 +11,9 @@ def insertionsort(a,n):   # recursive
       i -= 1
     a[i+1] = t
 
-"""
 
 # had to change to iterative because recursive did not work
+'''
 
 def insertionsort(a):
   for i in range(1, len(a)):
@@ -24,10 +24,10 @@ def insertionsort(a):
       j -= 1
     a[j+1] = k
   return a
-
+'''
 def main():
   arr = [int(line) for line in fileinput.input(files='input.txt')]
-  print(insertionsort(arr))
+  print(insertionsort(arr, len(arr)))
 
 if __name__ == '__main__':
   main()

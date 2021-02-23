@@ -5,7 +5,7 @@ import fileinput
 
 # modify insertionsort
 """
-def insertionsort(a, l=0, r=None):
+df insertionsort(a, l=0, r=None):
   if r is None:
     r = len(a)-1
   for i in range(l+1, r+1):
